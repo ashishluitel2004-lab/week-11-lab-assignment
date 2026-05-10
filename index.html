@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashish Luitel - Business Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
 
+    <nav class="nav-menu">
+      <a href="#" style="color: white; text-decoration: none;">Home</a>
+      <a href="#" style="color: white; text-decoration: none;">About</a>
+      
+      <!-- NEW: Week 11 Toggle Button thapeko -->
+      <button id="theme-toggle" style="cursor: pointer; padding: 5px 10px; border-radius: 5px; border: none; background: #2f81f7; color: white; font-weight: bold;">
+        Switch Theme
+      </button>
+      
+      <a href="#" style="color: white; text-decoration: none;">Projects</a>
+      <a href="#" style="color: white; text-decoration: none;">Contact</a>
+    </nav>
+
+    <div class="content-wrapper">
+      
+      <!-- Card 1 -->
+      <div class="business-card card">
+        <div class="card-header">
+          <img src="ashish.png" alt="Ashish Luitel" class="profile-img" />
+        </div>
+
+        <div class="card-body">
+          <h1 class="name">Ashish Luitel</h1>
+          <h2 class="title">Computer Engineering Student</h2>
+          <div class="divider"></div>
+          <div class="contact-info">
+            <p><span class="icon">📍</span><span>744-16, Simgokbon-dong, Bucheon-si</span></p>
+            <p><span class="icon">✉️</span><a href="mailto:ashishluitel2004@gmail.com">ashishluitel2004@gmail.com</a></p>
+            <p><span class="icon">📱</span><span>+82 10-5937-4934</span></p>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <a href="https://github.com/ashishluitel2004-lab" target="_blank" class="github-btn button">View My GitHub</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="business-card card">
+        <div class="card-header">
+          <img src="ashish.png" alt="Ashish Luitel" class="profile-img" />
+        </div>
+
+        <div class="card-body">
+          <h1 class="name">Ashish Luitel</h1>
+          <h2 class="title">Freelance Developer</h2>
+          <div class="divider"></div>
+          <div class="contact-info">
+            <p><span class="icon">💻</span><span>Full Stack Enthusiast</span></p>
+            <p><span class="icon">🚀</span><span>Available for Projects</span></p>
+            <p><span class="icon">🌍</span><span>Nepal / South Korea</span></p>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <a href="#" class="github-btn button">Contact Me</a>
+        </div>
+      </div>
+
+    </div> 
+
+    <!-- NEW: JavaScript File link gareko (Important!) -->
+    <script src="script.js"></script>
+  </body>
+</html>
