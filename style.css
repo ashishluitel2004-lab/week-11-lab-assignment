@@ -1,0 +1,182 @@
+/* =========================================
+   WEEK 6 REQUIREMENT: Border Box Fix
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================
+   "IT Executive" Theme - Base Styles
+   ========================================= */
+body {
+    background-color: #0d1117; 
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #c9d1d9;
+    min-height: 100vh;
+    padding: 50px 0;
+    /* Transition thapeko switch smoothly hos bhanera */
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* =========================================
+   WEEK 7 ADDITION: [Step 1] Navigation Menu
+   ========================================= */
+.nav-menu {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #161b22;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #30363d;
+}
+
+/* =========================================
+   WEEK 7 ADDITION: [Step 2] Horizontal Layout
+   ========================================= */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* =========================================
+   WEEK 6 REQUIREMENT: .card styling
+   ========================================= */
+.business-card.card {
+    background-color: #161b22; 
+    width: 360px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border: 2px solid #333;
+    border-top: 5px solid #2f81f7; 
+    padding: 20px; 
+    overflow: hidden;
+    text-align: center;
+}
+
+/* =========================================
+   WEEK 7 ADDITION: [Step 3] Fix Image Overflow
+   ========================================= */
+.profile-img {
+    max-width: 100%;
+    height: auto;
+    width: 110px;
+    border-radius: 50%;
+    border: 3px solid #161b22;
+    box-shadow: 0 0 0 3px #2f81f7; 
+    object-fit: cover;
+}
+
+/* =========================================
+   Other Elements (Buttons, Text, etc.)
+   ========================================= */
+.card-header { padding: 35px 20px 15px; }
+.card-body { padding: 10px 30px 25px; }
+
+.name {
+    color: #ffffff; 
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 6px;
+}
+
+.title {
+    color: #2f81f7; 
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.divider {
+    height: 1px;
+    background-color: #30363d;
+    margin: 25px 0;
+}
+
+.contact-info {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: flex-start;
+}
+
+.icon {
+    margin-right: 12px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.contact-info a {
+    color: #c9d1d9;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-info a:hover { color: #2f81f7; }
+
+.card-footer { padding: 0 30px 35px; }
+
+.github-btn {
+    display: inline-block;
+    background-color: #2f81f7;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 20px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.github-btn:hover {
+    background-color: #1f6feb;
+    transform: translateY(-2px);
+}
+
+h1, p { margin-bottom: 20px; }
+.button { margin-right: 15px; }
+
+/* =========================================
+   NEW WEEK 11: Light Mode Styles
+   ========================================= */
+
+/* Yo class thapida background change hunchha */
+.light-theme {
+    background-color: #ffffff !important;
+    color: #1a1a1a !important;
+}
+
+/* Light mode ma card ko look */
+.light-theme .business-card.card {
+    background-color: #f6f8fa;
+    border: 1px solid #d0d7de;
+    box-shadow: 0 8px 24px rgba(140, 149, 159, 0.1);
+}
+
+.light-theme .name { color: #1a1a1a; }
+.light-theme .contact-info a { color: #1a1a1a; }
+.light-theme .nav-menu {
+    background-color: #f6f8fa;
+    border-bottom: 1px solid #d0d7de;
+}
+
+/* Toggle button ko design */
+#theme-toggle {
+    background-color: #2f81f7;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
